@@ -74,7 +74,7 @@ use List::Util qw{min max};
 
 use Data::Dumper;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 Log::Log4perl->easy_init( { level => $INFO, layout => '%-5p - %m%n' } );
 
