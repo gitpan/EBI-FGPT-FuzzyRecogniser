@@ -74,7 +74,7 @@ use List::Util qw{min max};
 
 use Data::Dumper;
 
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 Log::Log4perl->easy_init( { level => $INFO, layout => '%-5p - %m%n' } );
 
@@ -84,7 +84,7 @@ has 'meshfile'       => ( is => 'rw', isa => 'Str' );
 has 'obofile'        => ( is => 'rw', isa => 'Str' );
 has 'owlfile'        => ( is => 'rw', isa => 'Str' );
 has 'omimfile'       => ( is => 'rw', isa => 'Str' );
-has 'ontology_terms' => ( is => 'rw', isa => 'ArrayRef' );
+has 'ontology_terms' => ( is => 'rw', isa => 'ArrayRef', default => sub { [] });
 
 sub BUILD {
 

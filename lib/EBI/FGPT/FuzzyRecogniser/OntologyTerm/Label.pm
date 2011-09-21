@@ -38,7 +38,7 @@ use lib 'C:\strawberry\perl\site\lib',
   'C:/Users/emma.EBI/Fuzzy/cpan-distribution/FuzzyRecogniser/lib';
 
 use Moose;
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 extends 'EBI::FGPT::FuzzyRecogniser::OntologyTerm::Annotation';
 
