@@ -15,10 +15,13 @@ based on some similarity metric (n-grams).',
 						'File::Temp' => 0,
 	},
 	requires => {
-				  'Moose'         => '0.89',
-				  'Log::Log4perl' => 0,
-				  'List::Util'    => 0,
-				  'XML::Parser'   => '2.34',
+				  'Moose'                            => '0.89',
+				  'Log::Log4perl'                    => 0,
+				  'List::Util'                       => 0,
+				  'XML::Parser'                      => '2.34',
+				  'OWL::Simple::Parser'              => '1.00',
+				  'MeSH::Parser::ASCII'              => '0.02',
+				  'Bio::Phenotype::OMIM::OMIMparser' => 0
 	},
 	recommends => {
 		'IO::File'     => 0,

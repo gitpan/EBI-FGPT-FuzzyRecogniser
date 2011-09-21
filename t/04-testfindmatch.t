@@ -8,6 +8,8 @@ use Test::More;
 use EBI::FGPT::FuzzyRecogniser;
 use Data::Dumper;
 
+use Test::More tests => 22;
+
 # turn off info for test
 use Log::Log4perl qw(:easy);
 Log::Log4perl->easy_init($WARN);
@@ -68,4 +70,4 @@ is( $x->{'term'},
 	'hereditary breast and ovarian cancer',
 	'Term matched is hereditary breast and ovarian cancer' );
 
-done_testing($number_of_tests_run);
+

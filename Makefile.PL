@@ -8,8 +8,11 @@ WriteMakefile
           'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/EBI/FGPT/FuzzyRecogniser.pm',
           'PREREQ_PM' => {
+                           'MeSH::Parser::ASCII' => '0.02',
                            'Test::More' => 0,
+                           'OWL::Simple::Parser' => '1.00',
                            'List::Util' => 0,
+                           'Bio::Phenotype::OMIM::OMIMparser' => 0,
                            'File::Temp' => 0,
                            'XML::Parser' => '2.34',
                            'Moose' => '0.89',
