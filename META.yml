@@ -17,19 +17,19 @@ name: EBI-FGPT-FuzzyRecogniser
 provides:
   EBI::FGPT::FuzzyRecogniser:
     file: lib/EBI/FGPT/FuzzyRecogniser.pm
-    version: 0.05
+    version: 0.06
   EBI::FGPT::FuzzyRecogniser::OntologyTerm:
     file: lib/EBI/FGPT/FuzzyRecogniser/OntologyTerm.pm
-    version: 0.05
+    version: 0.06
   EBI::FGPT::FuzzyRecogniser::OntologyTerm::Annotation:
     file: lib/EBI/FGPT/FuzzyRecogniser/OntologyTerm/Annotation.pm
-    version: 0.05
+    version: 0.06
   EBI::FGPT::FuzzyRecogniser::OntologyTerm::Label:
     file: lib/EBI/FGPT/FuzzyRecogniser/OntologyTerm/Label.pm
-    version: 0.05
+    version: 0.06
   EBI::FGPT::FuzzyRecogniser::OntologyTerm::Synonym:
     file: lib/EBI/FGPT/FuzzyRecogniser/OntologyTerm/Synonym.pm
-    version: 0.05
+    version: 0.06
 recommends:
   Benchmark: 0
   GO::Parser: 0
@@ -46,4 +46,4 @@ requires:
   XML::Parser: 2.34
 resources:
   license: http://opensource.org/licenses/gpl-license.php
-version: 0.05
+version: 0.06

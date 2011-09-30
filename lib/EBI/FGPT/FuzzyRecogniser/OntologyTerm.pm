@@ -42,7 +42,7 @@ use lib 'C:\strawberry\perl\site\lib',
 use Moose;
 
 
-our $VERSION = 0.05;
+our $VERSION = 0.06;
 
 has 'accession' => ( is => 'rw', isa => 'Str', required => 1 );
 has 'label'     => ( is => 'rw', isa => 'Str', required => 1 );

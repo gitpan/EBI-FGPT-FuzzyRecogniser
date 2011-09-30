@@ -5,7 +5,9 @@ WriteMakefile
           'PL_FILES' => {},
           'INSTALLDIRS' => 'site',
           'NAME' => 'EBI::FGPT::FuzzyRecogniser',
-          'EXE_FILES' => [],
+          'EXE_FILES' => [
+                           'scripts/similarity_match.pl'
+                         ],
           'VERSION_FROM' => 'lib/EBI/FGPT/FuzzyRecogniser.pm',
           'PREREQ_PM' => {
                            'MeSH::Parser::ASCII' => '0.02',

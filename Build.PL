@@ -33,7 +33,7 @@ based on some similarity metric (n-grams).',
 		#'Text::LevenshteinXS' => 0,
 	},
 
-	#script_files        => ['scripts/similarity_match.pl'],
+	script_files        => ['scripts/similarity_match.pl'],
 	add_to_cleanup     => ['FuzzyRecongiser-*'],
 	create_makefile_pl => 'traditional',
 );

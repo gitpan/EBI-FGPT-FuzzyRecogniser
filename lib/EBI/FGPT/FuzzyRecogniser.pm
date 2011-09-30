@@ -74,7 +74,7 @@ use List::Util qw{min max};
 
 use Data::Dumper;
 
-our $VERSION = 0.05;
+our $VERSION = 0.06;
 
 Log::Log4perl->easy_init( { level => $INFO, layout => '%-5p - %m%n' } );
 
@@ -127,7 +127,7 @@ sub find_match($) {
 	  EBI::FGPT::FuzzyRecogniser::OntologyTerm::Annotation->new( value => $string_to_match );
 
 	my $matched_term;
-	my $matched_acc;
+	my $matched_value;
 	my $type;
 	my $max_similarity = undef;
 
@@ -141,8 +141,8 @@ sub find_match($) {
 			my $similarity = $annotation->compare($annotationToMatch);
 			if ( !( defined $max_similarity ) || $similarity > $max_similarity ) {
 				$max_similarity = $similarity;
-				$matched_term   = $term->label();
-				$matched_acc    = $term->accession();
+				$matched_term   = $term;
+				$matched_value  = $annotation->value();
 				$type           = ref($annotation);
 			}
 		}
@@ -151,8 +151,8 @@ sub find_match($) {
 
 	return {
 			 term => $matched_term,
-			 acc  => $matched_acc,
-			 sim  => $max_similarity,
+			 value  => $matched_value,
+			 similarity  => $max_similarity,
 			 type => $type,
 	};
 }

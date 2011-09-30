@@ -1,7 +1,6 @@
 #!perl
 
-use lib 'C:\strawberry\perl\site\lib',
-  'C:/Users/emma.EBI/Fuzzy/cpan-distribution/FuzzyRecogniser/lib';
+use lib 'C:/Users/emma.EBI/Fuzzy/cpan-distribution/FuzzyRecogniser/lib';
 
 use Test::More tests => 2;
 
