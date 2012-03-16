@@ -21,13 +21,8 @@ ok( defined $fuzzy, 'new() returned something' );    # check that we got somethi
 ok( $fuzzy->isa('EBI::FGPT::FuzzyRecogniser'), "  and it's the right class" )
   ;                                                  # and it's the right class
 
-#simple test to check find match method
-#first checks for an exact match
-#second checks for a non-exact match
 
-use Data::Dumper;
-print Dumper( $fuzzy->find_match("adenocarcinoma") );
-print Dumper( $fuzzy->find_match("ademfgocarcinoma") );
+
 
 __DATA__
 <?xml version="1.0"?>

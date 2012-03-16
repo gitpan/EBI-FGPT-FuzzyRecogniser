@@ -21,16 +21,15 @@ based on some similarity metric (n-grams).',
 				  'XML::Parser'                      => '2.34',
 				  'OWL::Simple::Parser'              => '1.00',
 				  'MeSH::Parser::ASCII'              => '0.02',
+				  'GO::Parser'   => 0,
 				  'Bio::Phenotype::OMIM::OMIMparser' => 0
 	},
 	recommends => {
 		'IO::File'     => 0,
 		'IO::Handle'   => 0,
 		'Getopt::Long' => 0,
-		'GO::Parser'   => 0,
 		'Benchmark'    => 0,
 
-		#'Text::LevenshteinXS' => 0,
 	},
 
 	script_files        => ['scripts/similarity_match.pl'],
