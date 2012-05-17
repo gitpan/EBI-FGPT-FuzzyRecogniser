@@ -50,8 +50,6 @@ This software is provided "as is" without warranty of any kind.
 
 package EBI::FGPT::FuzzyRecogniser;
 
-use lib 'C:\strawberry\perl\site\lib',
-  'C:/Users/emma.EBI/Fuzzy/cpan-distribution/FuzzyRecogniser/lib';
 
 use Moose;
 
@@ -74,7 +72,7 @@ use List::Util qw{min max};
 
 use Data::Dumper;
 
-our $VERSION = 0.07;
+our $VERSION = 0.08;
 
 Log::Log4perl->easy_init( { level => $INFO, layout => '%-5p - %m%n' } );
 

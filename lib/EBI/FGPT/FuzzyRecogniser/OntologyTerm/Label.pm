@@ -33,12 +33,8 @@ This software is provided "as is" without warranty of any kind.
 
 package EBI::FGPT::FuzzyRecogniser::OntologyTerm::Label;
 
-
-use lib 'C:\strawberry\perl\site\lib',
-  'C:/Users/emma.EBI/Fuzzy/cpan-distribution/FuzzyRecogniser/lib';
-
 use Moose;
-our $VERSION = 0.07;
+our $VERSION = 0.08;
 
 extends 'EBI::FGPT::FuzzyRecogniser::OntologyTerm::Annotation';
 

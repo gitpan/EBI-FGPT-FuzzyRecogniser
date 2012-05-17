@@ -18,7 +18,7 @@ EBI::FGPT::FuzzyRecogniser::OntologyTerm::Annotation
 =item normalise()
 
 Normalises a string by changing it lowercase and
-splitting into 2-grams.
+splitting into 4-grams.
 
 =back
 
@@ -51,13 +51,11 @@ This software is provided "as is" without warranty of any kind.
 
 package EBI::FGPT::FuzzyRecogniser::OntologyTerm::Annotation;
 
-use lib 'C:\strawberry\perl\site\lib',
-  'C:/Users/emma.EBI/Fuzzy/cpan-distribution/FuzzyRecogniser/lib';
 
 use Moose;
 use List::Util qw{min max};
 
-our $VERSION = 0.07;
+our $VERSION = 0.08;
 
 has 'value' => (
 				 is  => 'rw',
@@ -78,7 +76,7 @@ sub _build_normalised_value {
 sub normalise {
 	my $string = shift;
 	$string = lc($string);
-	my $q = 2;
+	my $q = 4;
 
 	my $ngram;
 

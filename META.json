@@ -4,7 +4,7 @@
       "Emma Hastings <ehastings@cpan.org>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112150",
+   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112621",
    "license" : [
       "open_source"
    ],
@@ -47,7 +47,7 @@
    "provides" : {
       "EBI::FGPT::FuzzyRecogniser" : {
          "file" : "lib/EBI/FGPT/FuzzyRecogniser.pm",
-         "version" : "0.07"
+         "version" : "0.08"
       },
       "EBI::FGPT::FuzzyRecogniser::OntologyTerm" : {
          "file" : "lib/EBI/FGPT/FuzzyRecogniser/OntologyTerm.pm",
@@ -55,15 +55,15 @@
       },
       "EBI::FGPT::FuzzyRecogniser::OntologyTerm::Annotation" : {
          "file" : "lib/EBI/FGPT/FuzzyRecogniser/OntologyTerm/Annotation.pm",
-         "version" : "0.07"
+         "version" : "0.08"
       },
       "EBI::FGPT::FuzzyRecogniser::OntologyTerm::Label" : {
          "file" : "lib/EBI/FGPT/FuzzyRecogniser/OntologyTerm/Label.pm",
-         "version" : "0.07"
+         "version" : "0.08"
       },
       "EBI::FGPT::FuzzyRecogniser::OntologyTerm::Synonym" : {
          "file" : "lib/EBI/FGPT/FuzzyRecogniser/OntologyTerm/Synonym.pm",
-         "version" : "0.07"
+         "version" : "0.08"
       }
    },
    "release_status" : "stable",
@@ -72,5 +72,5 @@
          "http://opensource.org/licenses/gpl-license.php"
       ]
    },
-   "version" : "0.07"
+   "version" : "0.08"
 }

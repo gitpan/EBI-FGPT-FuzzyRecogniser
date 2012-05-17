@@ -2,24 +2,24 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-          'NAME' => 'EBI::FGPT::FuzzyRecogniser',
-          'VERSION_FROM' => 'lib/EBI/FGPT/FuzzyRecogniser.pm',
-          'PREREQ_PM' => {
-                           'Bio::Phenotype::OMIM::OMIMparser' => 0,
-                           'File::Temp' => 0,
-                           'GO::Parser' => 0,
-                           'List::Util' => 0,
-                           'Log::Log4perl' => 0,
-                           'MeSH::Parser::ASCII' => '0.02',
-                           'Moose' => '0.89',
-                           'OWL::Simple::Parser' => '1.00',
-                           'Test::More' => 0,
-                           'XML::Parser' => '2.34'
-                         },
-          'INSTALLDIRS' => 'site',
-          'EXE_FILES' => [
-                           'scripts/similarity_match.pl'
-                         ],
-          'PL_FILES' => {}
-        )
+  'PL_FILES' => {},
+  'INSTALLDIRS' => 'site',
+  'NAME' => 'EBI::FGPT::FuzzyRecogniser',
+  'EXE_FILES' => [
+                   'scripts/similarity_match.pl'
+                 ],
+  'VERSION_FROM' => 'lib/EBI/FGPT/FuzzyRecogniser.pm',
+  'PREREQ_PM' => {
+                   'MeSH::Parser::ASCII' => '0.02',
+                   'GO::Parser' => 0,
+                   'Test::More' => 0,
+                   'OWL::Simple::Parser' => '1.00',
+                   'List::Util' => 0,
+                   'Bio::Phenotype::OMIM::OMIMparser' => 0,
+                   'File::Temp' => 0,
+                   'XML::Parser' => '2.34',
+                   'Moose' => '0.89',
+                   'Log::Log4perl' => 0
+                 }
+)
 ;
