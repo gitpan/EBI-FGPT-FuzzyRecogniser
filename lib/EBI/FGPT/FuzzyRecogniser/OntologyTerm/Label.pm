@@ -22,19 +22,25 @@ Tomasz Adamusiak <tomasz@cpan.org>
  
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2010 European Bioinformatics Institute. All Rights Reserved.
+EBI::FGPT::FuzzyRecogniser module finds the best match 
+for the supplied term in the given ontology.
 
-This module is free software; you can redistribute it and/or modify it 
-under GPLv3.
+Copyright [2011] EMBL - European Bioinformatics Institute
 
-This software is provided "as is" without warranty of any kind.
+Licensed free of charge for academic, non-commercial
+purposes under the EMBL Standard academic license; and for
+a fee to commercial users and/or commercial purposes under
+a commercial license.
+For download please follow:
+http://www.embl-em.de/login.php
+
 
 =cut
 
 package EBI::FGPT::FuzzyRecogniser::OntologyTerm::Label;
 
 use Moose;
-our $VERSION = 0.08;
+our $VERSION = 0.09;
 
 extends 'EBI::FGPT::FuzzyRecogniser::OntologyTerm::Annotation';
 

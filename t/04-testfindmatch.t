@@ -1,5 +1,6 @@
 #!perl
 
+use lib  'C:/Users/emma.EBI/Fuzzy/cpan-distribution/FuzzyRecogniser/lib';
 
 use Test::More;
 
@@ -69,7 +70,6 @@ is( $x->{'term'}->accession(), 'EFO:0002611', 'EFO accession is equal to EFO:000
 is( $x->{'term'}->label(),
 	'hereditary breast and ovarian cancer',
 	'Term matched is hereditary breast and ovarian cancer' );
-
 
 
 

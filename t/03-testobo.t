@@ -1,6 +1,7 @@
 #!perl
 
 
+use lib  'C:/Users/emma.EBI/Fuzzy/cpan-distribution/FuzzyRecogniser/lib';
 
 use Test::More tests => 2;
 

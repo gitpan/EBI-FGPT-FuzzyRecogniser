@@ -39,17 +39,23 @@ Tomasz Adamusiak <tomasz@cpan.org>
  
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2010 European Bioinformatics Institute. All Rights Reserved.
+EBI::FGPT::FuzzyRecogniser module finds the best match 
+for the supplied term in the given ontology.
 
-This module is free software; you can redistribute it and/or modify it 
-under GPLv3.
+Copyright [2011] EMBL - European Bioinformatics Institute
 
-This software is provided "as is" without warranty of any kind.
+Licensed free of charge for academic, non-commercial
+purposes under the EMBL Standard academic license; and for
+a fee to commercial users and/or commercial purposes under
+a commercial license.
+For download please follow:
+http://www.embl-em.de/login.php
 
 =cut
 
 package EBI::FGPT::FuzzyRecogniser;
 
+use lib  'C:/Users/emma.EBI/Fuzzy/cpan-distribution/FuzzyRecogniser/lib';
 
 use Moose;
 
@@ -72,7 +78,7 @@ use List::Util qw{min max};
 
 use Data::Dumper;
 
-our $VERSION = 0.08;
+our $VERSION = 0.09;
 
 Log::Log4perl->easy_init( { level => $INFO, layout => '%-5p - %m%n' } );
 
@@ -312,7 +318,7 @@ sub parseOBO($) {
 		my @synonyms  = @{ $OBOclass->synonym_list() };
 		my $term      = createOntologyTerm( $accession, $label, @synonyms );
 
-		# Add term to ontology_terms array
+		# Add term to  array
 		push @{ $self->ontology_terms }, $term;
 	}
 
@@ -352,7 +358,7 @@ sub parseOWL($) {
 
 		my $term = createOntologyTerm( $accession, $label, @synonyms );
 
-		# Add term to ontology_terms array
+		# Add term to  array
 		push @{ $self->ontology_terms }, $term;
 	}
 
