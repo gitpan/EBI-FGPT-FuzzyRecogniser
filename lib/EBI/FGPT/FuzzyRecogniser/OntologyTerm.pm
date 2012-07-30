@@ -25,17 +25,18 @@ Tomasz Adamusiak <tomasz@cpan.org>
  
 =head1 COPYRIGHT AND LICENSE
 
-EBI::FGPT::FuzzyRecogniser module finds the best match 
-for the supplied term in the given ontology. 
-
 Copyright [2011] EMBL - European Bioinformatics Institute
 
-Licensed free of charge for academic, non-commercial
-purposes under the EMBL Standard academic license; and for
-a fee to commercial users and/or commercial purposes under
-a commercial license.
-For download please follow:
-http://www.embl-em.de/login.php
+Licensed under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License. You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+either express or implied. See the License for the specific
+language governing permissions and limitations under the
+License.
 
 =cut
 
